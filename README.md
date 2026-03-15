@@ -10,23 +10,38 @@
 
 </head>
 
-<body>
+<body><body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
 
-<header>
+<header><header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
 
 <h1>Smart Online Tips</h1>
 <p>Technology • Apps • Online Earning</p>
 
 </header>
 
-<nav>
+<nav><nav{
+background:#333;
+padding:10px;
+text-align:center;
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 <a href="privacy.html">Privacy</a>
 
-</nav>
+</nav><
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
 
 <input id="search" placeholder="Search articles...">
 
@@ -82,64 +97,23 @@ Learn how to build your first website easily.
 
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js"></script><const search = document.getElementById("search")
+
+#search.addEventListener("keyup", function(){
+
+let filter = search.value.toLowerCase()
+
+let articles = document.querySelectorAll(".card")
+
+articles.forEach(function(card){
+
+let text = card.innerText.toLowerCase()
+
+card.style.display = text.includes(filter) ? "" : "none"
+
+})
+
+})
 
 </body>
 </html>
-style.cc body{
-font-family:Arial;
-margin:0;
-background:#f4f4f4;
-}
-
-header{
-background:#111;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-nav{
-background:#333;
-padding:10px;
-text-align:center;
-}
-
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
-}
-
-#search{
-display:block;
-margin:20px auto;
-padding:10px;
-width:90%;
-max-width:400px;
-}
-
-.container{
-padding:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.card a{
-text-decoration:none;
-color:black;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-}
