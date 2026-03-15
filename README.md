@@ -86,3 +86,60 @@ Learn how to build your first website easily.
 
 </body>
 </html>
+style.cc body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#333;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+#search{
+display:block;
+margin:20px auto;
+padding:10px;
+width:90%;
+max-width:400px;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card a{
+text-decoration:none;
+color:black;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
